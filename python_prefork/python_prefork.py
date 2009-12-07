@@ -67,16 +67,3 @@ class PythonPrefork:
     if self.on_reap_cb:
       self.on_reap_cb(pid, status)
     
-if __name__ == "__main__":
-
-  def some_task():
-    print os.getpid()
-    time.sleep(25)
-    
-  pp = PythonPrefork(trap_signals=[signal.SIGTERM, signal.SIGINT])
-  while pp.signal_received is None:
-    if pp.start(): continue
-    some_task()
-    print os.getpid()
-    pp.finish()
-  pp.wait_all_children()
