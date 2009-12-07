@@ -26,7 +26,7 @@ if __name__ == '__main__':
     description  = 'parallel processing fork manager inspired by Parallel::Prefork in CPAN',
     author       = 'Matsumoto Taichi',
     author_email = 'taichino@gmail.com',
-    url          = 'github',
+    url          = 'http://github.com/taichino/python_prefork',
     keywords     = 'multi process, parallel, prefork',
     license      = 'MIT',
     classifiers  = ["Development Status :: 3 - Alpha",
