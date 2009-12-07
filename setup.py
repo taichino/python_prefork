@@ -20,19 +20,20 @@ if __name__ == '__main__':
 
   # build distribution package
   setup(
-    name         = 'python_prefork',
-    version      = __version__,
-    py_modules   = ['python_prefork', 'python_prefork_test'],
-    description  = 'parallel processing fork manager inspired by Parallel::Prefork in CPAN',
-    author       = 'Matsumoto Taichi',
-    author_email = 'taichino@gmail.com',
-    url          = 'http://github.com/taichino/python_prefork',
-    keywords     = 'multi process, parallel, prefork',
-    license      = 'MIT',
-    classifiers  = ["Development Status :: 3 - Alpha",
-                    "Intended Audience :: Developers",
-                    "License :: OSI Approved :: MIT License",
-                    "Operating System :: POSIX",
-                    "Programming Language :: Python",
-                    "Topic :: Software Development :: Libraries :: Python Modules"]
+    name             = 'python_prefork',
+    version          = __version__,
+    py_modules       = ['python_prefork', 'python_prefork_test'],
+    description      = 'parallel processing fork manager inspired by Parallel::Prefork in CPAN',
+    long_description = python_prefork.__doc__,
+    author           = 'Matsumoto Taichi',
+    author_email     = 'taichino@gmail.com',
+    url              = 'http://github.com/taichino/python_prefork',
+    keywords         = 'multi process, parallel, prefork',
+    license          = 'MIT',
+    classifiers      = ["Development Status :: 3 - Alpha",
+                        "Intended Audience :: Developers",
+                        "License :: OSI Approved :: MIT License",
+                        "Operating System :: POSIX",
+                        "Programming Language :: Python",
+                        "Topic :: Software Development :: Libraries :: Python Modules"]
     )
